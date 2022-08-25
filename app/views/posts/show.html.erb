@@ -9,7 +9,7 @@
       </tr>
       <tr>
         <th>タグ</th>
-        <td><%= @post.tags.first.tag_name if @post.tags.first.present? %></td>
+        <td><%= @post.tags&.first&.tag_name %></td>
       </tr>
     </tbody>
   </table>
